@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:alpine
+    container_name: ticket_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: user
+      POSTGRES_DB: ticket_engine
+    ports:
+      - "5432:5432"
